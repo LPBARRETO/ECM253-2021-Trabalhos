@@ -176,7 +176,22 @@ Métodos de prova em lógica de predicados}
                     \begin{center}
                         $(\exists x)[A(x) \wedge \neg M(x)] \wedge (\forall x)[O(x) \rightarrow M(x)] \wedge (\forall x)[O(x) \vee L(x)] \rightarrow (\exists x)[A(x) \wedge L(x)]$
                     \end{center}
-                    
+                     \begin{enumerate}[label=\arabic*. ,itemsep=-1.1ex , leftmargin=1.2cm ,rightmargin=\dimexpr\linewidth-6.5cm-\leftmargin]
+                        \item $(\exists x)[A(x) \wedge \neg M(x)]$\dotfill (hip.) % 1
+                        \item $(\forall x)[O(x)\rightarrow M(x)]$\dotfill (hip.) % 2
+                        \item $(\forall x) [O(x) \vee L(x)]$ \dotfill (hip.) % 3
+                        \item $A(a) \wedge \neg M(a)$ \dotfill (1, ei)% 4
+                        \vspace{2pt}
+                        \item $O(a) \rightarrow M(a)$ \dotfill (2, ui) % 5
+                        \item $O(a) \vee L(a) $ \dotfill (3, ui) % 6
+                        \item $\neg M(a))$ \dotfill (4, sim) % 7
+                        \item $\neg O(a)$ \dotfill (5, 6, mt) % 8
+                        \item $\neg O(a) \rightarrow L(a) $ \dotfill (6, imp) % 9
+                        \item $L(a)$ \dotfill (8, 9, mp) % 10
+                        \item $A(a)$ \dotfill (4, sim) % 11
+                        \item $A(a) \wedge L(a)$ \dotfill (10,11 con) % 12
+                        \item $(\exists x) [A(x) \wegde L(x)]$ \dotfill (12, eg) % 13
+                    \end{enumerate} % Prova b
                 \item Todo membro do conselho vem da indústria ou do governo. Todos do governo que são advogados são a favor da moção. John não é da indústria, mas é advogado. Portanto, se John for um membro do conselho, ele será a favor da moção $(M(x), I(x), G(x), A(x), F(x),j)$.\smallskip \\
                 Dica: Para resolver problemas do tipo (lógica proposicional ou de predicados) como $A \wedge B \wedge C \rightarrow D \rightarrow E$, notar que a expressão pode ser reescrita como $\neg(A \wedge B \wedge C) \vee (\neg D \vee E)$ que, por sua vez, pode ser escrita como $(\neg A \vee \neg B \vee \neg C)\vee(\neg D \vee E)$ e também como $(\neg A \vee \neg B \vee \neg C \vee \neg D) \vee E$ e, finalmente, como $A \wedge B \wedge C \wedge D \rightarrow E$. Em outras palavras, nesse tipo de forma (somente nesse), a fbf $D$ também pode ser admitida como uma hipótese. % b
                     \begin{center}
